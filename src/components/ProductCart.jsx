@@ -1,10 +1,10 @@
-import p1 from "../images/p1.png"
+import p1 from "../assets/p1.png"
 import { Rating } from '@mui/material';
-import Cart from "../images/cart.svg"
-import Heart from "../images/yellow-heart.svg"
-import FullHeart from "../images/fullheart.svg"
+import Cart from "../assets/cart.svg"
+import Heart from "../assets/yellow-heart.svg"
+import FullHeart from "../assets/fullheart.svg"
 import { NavLink } from 'react-router-dom';
-import Fire from "../images/fire.svg"
+import Fire from "../assets/fire.svg"
 
 
 const ProductCart = ({ liked, isFire }) => {

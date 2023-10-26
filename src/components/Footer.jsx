@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
-import Logo from "../images/logo.svg"
-import Inst from "../images/inst.svg"
-import Fb from "../images/facebook.svg"
+import Logo from "../assets/logo.svg"
+import Inst from "../assets/inst.svg"
+import Fb from "../assets/facebook.svg"
 
 const Footer = () => {
     return (

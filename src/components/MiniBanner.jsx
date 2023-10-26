@@ -1,11 +1,11 @@
-import Mb1 from "../images/mb1.png"
-import Mb2 from "../images/mb2.png"
-import Mb3 from "../images/mb3.png"
-import Mb4 from "../images/mb4.png"
-import Mb5 from "../images/mb5.png"
-import Mb6 from "../images/mb6.png"
-import Mb7 from "../images/mb7.png"
-import Mb8 from "../images/mb8.png"
+import Mb1 from "../assets/mb1.png"
+import Mb2 from "../assets/mb2.png"
+import Mb3 from "../assets/mb3.png"
+import Mb4 from "../assets/mb4.png"
+import Mb5 from "../assets/mb5.png"
+import Mb6 from "../assets/mb6.png"
+import Mb7 from "../assets/mb7.png"
+import Mb8 from "../assets/mb8.png"
 
 
 const MiniBanner = () => {

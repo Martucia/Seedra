@@ -1,7 +1,7 @@
-import bl1 from "../images/bl1.png"
-import bl2 from "../images/bl2.png"
-import bl3 from "../images/bl3.png"
-import Oclock from "../images/oclock.svg"
+import bl1 from "../assets/bl1.png"
+import bl2 from "../assets/bl2.png"
+import bl3 from "../assets/bl3.png"
+import Oclock from "../assets/oclock.svg"
 import { NavLink } from 'react-router-dom';
 
 const OurBlog = () => {

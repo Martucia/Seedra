@@ -1,10 +1,10 @@
-import f1 from "../images/f1.svg"
-import f2 from "../images/f2.svg"
-import f3 from "../images/f3.svg"
-import f4 from "../images/f4.svg"
-import f5 from "../images/f5.svg"
-import f6 from "../images/f6.svg"
-import f7 from "../images/f7.svg"
+import f1 from "../assets/f1.svg"
+import f2 from "../assets/f2.svg"
+import f3 from "../assets/f3.svg"
+import f4 from "../assets/f4.svg"
+import f5 from "../assets/f5.svg"
+import f6 from "../assets/f6.svg"
+import f7 from "../assets/f7.svg"
 import ProductCart from "./ProductCart"
 
 const Catalog = () => {

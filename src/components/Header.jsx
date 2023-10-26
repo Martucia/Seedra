@@ -1,9 +1,9 @@
-import Logo from "../../images/logo.svg"
-import Inst from "../../images/inst.svg"
-import Fb from "../../images/facebook.svg"
-import Cart from "../../images/cart.svg"
-import Heart from "../../images/heart.svg"
-import Menu from "../../images/Menu.svg"
+import Logo from "../assets/logo.svg"
+import Inst from "../assets/inst.svg"
+import Fb from "../assets/facebook.svg"
+import Cart from "../assets/cart.svg"
+import Heart from "../assets/heart.svg"
+import Menu from "../assets/Menu.svg"
 import { NavLink } from 'react-router-dom';
 
 const Header = () => {

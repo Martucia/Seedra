@@ -1,10 +1,10 @@
-import Fire from "../images/fire.svg"
-import BannerMain from "../images/bmain.png"
-import b1 from "../images/b1.png"
-import b2 from "../images/b2.png"
-import b3 from "../images/b3.png"
-import b4 from "../images/b4.png"
-import b5 from "../images/b5.png"
+import Fire from "../assets/fire.svg"
+import BannerMain from "../assets/bmain.png"
+import b1 from "../assets/b1.png"
+import b2 from "../assets/b2.png"
+import b3 from "../assets/b3.png"
+import b4 from "../assets/b4.png"
+import b5 from "../assets/b5.png"
 
 const Banner = () => {
     return (
