@@ -1,0 +1,76 @@
+.header
+    width: 100%
+    display: flex
+    justify-content: center
+    box-shadow: 0px 4px 12px rgba(207, 207, 207, 0.25)
+    padding: 25px 0
+    &__inner
+        max-width: 1600px
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 0 30px
+        &__nav
+            display: flex
+            align-items: center
+            a
+                color: #70737C
+                padding: 0 16px
+                border-right: 1px solid #EFEFEF
+                transition: 0.3s
+                &:hover
+                    color: #000
+                &:first-child
+                    padding-left: 0
+                &:last-child
+                    padding-right: 0
+                    border-right: 0
+        &__functional
+            display: flex
+            align-items: center
+            gap: 25px
+            &__inner
+                display: flex
+                align-items: center
+                gap: 15px
+            input
+                border: 1px solid #EFEFEF
+                border-radius: 71px
+                min-width: 350px
+                padding: 10px 20px
+                display: block
+            &__btns
+                gap: 20px
+                display: flex
+                align-items: center
+            .mobile-menu
+                display: none
+
+@media only screen and (max-width: 1200px)
+    .header
+        &__inner
+            &__functional
+                input
+                    display: none
+
+@media only screen and (max-width: 820px)
+    .header
+        &__inner
+            &__functional
+                &__inner
+                    display: none
+
+@media only screen and (max-width: 740px)
+    .header
+        &__inner
+            &__nav
+                display: none
+            &__functional
+                .mobile-menu
+                    display: block
+                &__btns
+                    a
+                        border: 1px solid #EFEFEF
+                        border-radius: 100%
+                        padding: 6px

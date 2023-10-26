@@ -1,0 +1,241 @@
+@media only screen and (max-width: 1250px)
+    .catalog
+        &__wrapper
+            grid-template-columns: 1fr 1fr 1fr 1fr
+    .info
+        &__inner
+            gap: 20px
+        &__img
+            max-width: 600px
+            img
+                height: auto
+                width: 100%
+
+@media only screen and (max-width: 1050px)
+    .our_blog
+        &__wrapper
+            display: grid
+            gap: 30px
+            grid-template-areas: "b1 b1" "b2 b4" "b3 b4"
+            .block
+                &:nth-child(4)
+                    overflow: hidden
+                    display: flex
+                    flex-direction: column
+                    gap: 20px
+                    .block__img
+                        overflow: hidden
+                        img
+                            height: 100%
+                            max-width: 1000px
+
+@media only screen and (max-width: 1000px)
+    .banner
+        &__inner
+            padding: 48px 30px 52px
+    .catalog
+        &__wrapper
+            grid-template-columns: 1fr 1fr 1fr
+    .footer__up
+        ul
+            li
+                padding: 0 20px
+@media only screen and (max-width: 850px)
+    .banner
+        &__inner
+            grid-template-columns: 1fr
+            &__img
+                display: none
+    .footer
+        &__up
+            display: grid
+            grid-template-areas: "logo logo" "ul_l ul_r"
+            gap: 30px
+            .logo
+                text-align: center
+@media only screen and (max-width: 750px)
+    .info
+        &__inner
+            grid-template-columns: 1fr
+        &__text
+            padding-right: 30px
+        &__img
+            max-width: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            img
+                max-width: 500px
+    .footer
+        &__up
+            align-items: flex-start
+            ul
+                flex-direction: column
+                gap: 20px
+                &.nav_right
+                    text-align: right
+                li
+                    padding: 0
+                    border-right: 0
+
+@media only screen and (max-width: 700px)
+    .our_blog
+        &__wrapper
+            gap: 15px
+            .block
+                padding: 20px
+                &:nth-child(1)
+                    .block__img
+                        height: 100%
+                        img
+                            right: -20px
+                            bottom: -20px
+                &:nth-child(4)
+                    .block__img
+                        img
+                            height: auto
+                            width: 100%
+
+@media only screen and (max-width: 650px)
+    .catalog
+        &__wrapper
+            grid-template-columns: 1fr 1fr
+
+@media only screen and (max-width: 550px)
+    .banner
+        &__inner
+            padding: 10px 30px 50px
+            display: flex
+            flex-direction: column-reverse
+            &__text
+                display: grid
+                grid-template-columns: 1fr
+                grid-template-areas: "price" "title" "desc" "btns"
+            h1
+                font-size: 40px
+                line-height: 46px
+                grid-area: title
+            h4
+                font-size: 20px
+                grid-area: desc
+                margin-bottom: 40px
+            .price
+                grid-area: price
+            &__img
+                display: flex
+                align-items: center
+                justify-content: center
+                img
+                    width: 290px
+                    position: initial
+                    width: 100%
+                    transform: translate(0, 0)
+            .btns
+                display: grid
+                grid-template-columns: 1fr 1fr
+                grid-area: btns
+                button
+                    width: 100%
+                    font-size: 18px
+        .banner_image
+            &.b1
+                left: 0
+                top: 0
+                transform: rotate(180deg)
+            &.b2
+                right: -50px
+                top: 124px
+                transform: rotate(15deg)
+            &.b3
+                right: 0
+                top: 20px
+            &.b4
+                right: 297px
+                top: 281px
+                transform: rotate(358deg)
+            &.b5
+                right: 35px
+                top: 21px
+    .mini_banner
+        padding: 35px 0 50px
+        h4
+            max-width: 353px
+    .our_blog
+        &__wrapper
+            grid-template-areas: "b1 b1" "b2 b3" "b4 b4"
+            .block
+                &:nth-child(1)
+                    padding-bottom: 140px
+                    .block__img
+                        img
+                            bottom: -140px
+                &:nth-child(2),
+                &:nth-child(3)
+                    padding-bottom: 165px
+                &:nth-child(4)
+                    .block__img
+                        display: none
+
+@media only screen and (max-width: 450px)
+    .banner
+        &__inner
+            padding: 10px 21px 50px
+            .btns
+                display: grid
+                grid-template-columns: 1fr
+            .price
+                margin-bottom: 5px
+                .main_price
+                    color: #E55C5C
+                    font-size: 32px
+                    line-height: 34px
+            h1
+                font-weight: 600
+                font-size: 28px
+                line-height: 36px
+            h4
+                font-weight: 300
+                font-size: 14px
+                line-height: 28px
+    .mini_banner
+        h4
+            max-width: 300px
+    .catalog
+        &__header
+            h2
+                font-size: 22px
+        &__wrapper
+            gap: 10px
+    .product_cart
+        &__title
+            a
+                font-size: 16px
+                line-height: 25px
+        &__footer
+            .price
+                font-size: 24px
+            button
+                padding: 6px
+        .like_btn
+            width: 40px
+            height: 40px
+        &__rate
+            display: flex
+            align-items: flex-start
+            gap: 5px
+            margin-bottom: 0
+            flex-direction: column
+    .our_blog
+        display: none
+    .info
+        &__inner
+            padding-left: 20px
+            padding-right: 20px
+            gap: 0
+        &__text
+            padding-right: 0
+        .leaf
+            height: 50px
+        h2
+            font-size: 22px
+            line-height: 34px

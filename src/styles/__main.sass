@@ -1,0 +1,456 @@
+.banner
+    margin: 32px auto 16px
+    background: #EAF1EB
+    border-radius: 24px
+    // min-height: 500px
+    // max-height: 500px
+    position: relative
+    overflow: hidden
+    &__inner
+        display: grid
+        grid-template-columns: 2fr 1fr
+        padding: 48px 75px 52px
+        color: #1F2533
+        z-index: 10
+        gap: 10px
+        &__text
+            z-index: 10
+        h1
+            font-weight: 600
+            font-size: 48px
+            line-height: 54px
+            max-width: 650px
+            z-index: 10
+        h4
+            font-weight: 300
+            font-size: 16px
+            line-height: 28px
+            margin: 12px 0 20px
+        .price
+            display: flex
+            align-items: center
+            gap: 15px
+            line-height: 54px
+            font-weight: 600
+            margin-bottom: 20px
+            .main_price
+                font-size: 42px
+            .old_price
+                font-size: 22px
+                color: #70737C
+                text-decoration: line-through
+        .btns
+            display: flex
+            gap: 10px
+            button
+                font-weight: 500
+                font-size: 16px
+                line-height: 178.19%
+                letter-spacing: -0.035em
+                border-radius: 8px
+                height: 55px
+                display: flex
+                align-items: center
+                justify-content: center
+                padding: 0 40px
+                &.add
+                    background: #359740
+                    color: #FFFFFF
+                &.discover
+                    background: #FFFFFF
+                    color: #359740
+        &__img
+            z-index: 10
+            position: relative
+            img
+                position: absolute
+                right: -40px
+                top: 50%
+                transform: translate(0, -50%)
+
+    .banner_image
+        position: absolute
+        &.b1
+            right: 0
+            bottom: 0
+        &.b2
+            right: -20px
+            top: 85px
+        &.b3
+            right: 0
+            top: 20px
+        &.b4
+            right: 275px
+            top: 50px
+        &.b5
+            right: 350px
+            bottom: 21px
+
+.mini_banner
+    background: rgba(255, 230, 46, 0.09)
+    border-radius: 12px
+    margin: 32px auto 60px
+    position: relative
+    overflow: hidden
+    display: flex
+    align-items: center
+    color: #1F2533
+    padding: 25px 0
+    text-align: center
+    flex-direction: column
+    h2
+        font-weight: 600
+        font-size: 24px
+        line-height: 32px
+        letter-spacing: -0.02em
+        z-index: 10
+    h4
+        font-weight: 500
+        font-size: 16px
+        line-height: 178.19%
+        letter-spacing: -0.035em
+        color: #70737C
+        z-index: 10
+    img
+        position: absolute
+        z-index: 2
+    .mb1
+        left: 12px
+        top: 10px
+    .mb2
+        left: 35px
+        bottom: 0
+    .mb3
+        left: 102px
+        bottom: 47px
+    .mb4
+        left: 185px
+        bottom: 0
+    .mb5
+        right: 150px
+        top: 0
+    .mb6
+        right: 133px
+        top: 43px
+    .mb7
+        right: 97px
+        top: 18px
+    .mb8
+        right: 0
+        bottom: 0
+
+.catalog
+    margin: 0 auto 60px
+    &__header
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 42px
+        h2
+            font-weight: 600
+            font-size: 36px
+            line-height: 54px
+            letter-spacing: -0.05em
+        button
+            background: #FFFFFF
+            border: 1px solid #EFEFEF
+            border-radius: 8px
+            color: #359740
+            padding: 11px 33px
+            transition: 0.3s
+            &:hover
+                border: 1px solid #959595
+                padding: 10px 33px 12px
+    &__filter
+        display: flex
+        align-items: center
+        gap: 12px
+        margin-bottom: 32px
+        display: none
+        button
+            border: 2px solid #EFEFEF
+            border-radius: 8px
+            font-size: 14px
+            display: flex
+            align-items: center
+            gap: 8px
+            padding: 24px 30px
+            transition: 0.3s
+            &:hover
+                border: 2px solid #959595
+                padding: 22px 30px 26px
+    &__wrapper
+        display: grid
+        // grid-template-columns: repeat( auto-fit, minmax(300px, 350px) )
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+        gap: 30px
+
+.product_cart
+    position: relative
+    padding: 1rem
+    border: 2px solid #EFEFEF
+    border-radius: 8px
+    &__image
+        margin-bottom: 24px
+        z-index: 1
+        a
+            z-index: 1
+            img
+                width: 100%
+                z-index: 1
+    &__rate
+        display: flex
+        align-items: center
+        gap: 13px
+        margin-bottom: 4px
+        .count
+            font-weight: 400
+            font-size: 14px
+            line-height: 178.19%
+            color: #70737C
+    &__title
+        a
+            font-weight: 500
+            font-size: 16px
+            line-height: 25px
+            letter-spacing: -0.04em
+            margin-bottom: 8px
+            color: #1F2533
+    &__footer
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .price
+            font-weight: 600
+            font-size: 28px
+            line-height: 54px
+            display: flex
+            align-items: center
+            gap: 5px
+            img
+                height: 20px
+        button
+            border: 1px solid #EFEFEF
+            border-radius: 8px
+            padding: 12px
+            transition: 0.3s
+            &:hover
+                border: 1px solid #b8b8b8
+    .like_btn
+        position: absolute
+        top: 12px
+        right: 12px
+        background: #FFFFFF
+        border: 1px solid #EFEFEF
+        border-radius: 100%
+        width: 48px
+        height: 48px
+        display: flex
+        align-items: center
+        justify-content: center
+        z-index: 10
+        &.liked
+            border: 1px solid #FFCF55
+            path
+                fill: #FFCF55
+            svg
+                fill: #FFCF55
+                path
+                    fill: #FFCF55
+
+.our_blog
+    margin: 30px auto
+    &__header
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 42px
+        h2
+            font-weight: 600
+            font-size: 36px
+            line-height: 54px
+            letter-spacing: -0.05em
+        button
+            background: #FFFFFF
+            border: 1px solid #EFEFEF
+            border-radius: 8px
+            color: #359740
+            padding: 11px 33px
+            transition: 0.3s
+            &:hover
+                border: 1px solid #959595
+                padding: 10px 33px 12px
+    &__wrapper
+        display: grid
+        gap: 30px
+        grid-template-areas: "b1 b1 b4" "b2 b3 b4"
+        .block
+            padding: 30px
+            border-radius: 12px
+            .time
+                font-size: 14px
+                line-height: 25px
+                color: #70737C
+                display: flex
+                align-items: center
+                gap: 8px
+                margin-bottom: 8px
+            h3
+                font-weight: 600
+                font-size: 24px
+                line-height: 32px
+                letter-spacing: -0.02em
+            p
+                font-size: 14px
+                line-height: 25px
+                color: #70737C
+                margin: 4px 0 14px
+            a
+                background: #FFFFFF
+                border: 1px solid #EFEFEF
+                border-radius: 8px
+                padding: 11px 33px
+                font-weight: 500
+                font-size: 16px
+                line-height: 29px
+                color: #359740
+            &:nth-child(1)
+                display: grid
+                grid-template-columns: 2fr 1fr
+                background: #EAF1EB
+                grid-area: b1
+                .block__img
+                    position: relative
+                    height: calc(100% + 60px)
+                    img
+                        position: absolute
+                        right: -30px
+                        bottom: 30px
+                        height: 100%
+            &:nth-child(2),
+            &:nth-child(3)
+                background: #EFF2F8
+                padding-bottom: 110px
+                position: relative
+                .block__img
+                    position: absolute
+                    bottom: 0
+                    right: 0
+                    max-width: 196px
+                    img
+                        max-width: 100%
+                        max-height: 100%
+            &:nth-child(2)
+                grid-area: b2
+            &:nth-child(3)
+                grid-area: b3
+            &:nth-child(4)
+                grid-area: b4
+                background: #EFF2F8
+                position: relative
+                .block__img
+                    position: absolute
+                    bottom: 0
+                    right: 0
+                    img
+                        max-width: 100%
+                        max-height: 100%
+
+.info
+    max-width: 100%
+    position: relative
+    margin-top: 120px
+    width: 100%
+    &__inner
+        width: 100%
+        max-width: 1600px
+        margin: 0 auto
+        display: grid
+        grid-template-columns: 1fr 1fr
+        align-items: center
+        gap: 80px
+        padding-left: 30px
+        h2
+            font-weight: 600
+            font-size: 36px
+            line-height: 54px
+            letter-spacing: -0.05em
+            margin-bottom: 30px
+        p
+            font-weight: 300
+            font-size: 16px
+            line-height: 28px
+            margin-bottom: 30px
+    &__img
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        img
+            height: 100%
+    .leaf
+        position: absolute
+        right: 0
+        bottom: 50px
+
+.footer
+    width: 100%
+    background: #FFFFFF
+    box-shadow: 0px -7px 80px rgba(189, 189, 189, 0.25)
+    margin-top: 50px
+    &__inner
+        width: 95%
+        max-width: 1600px
+        display: flex
+        flex-direction: column
+        margin: 0 auto
+        padding: 40px 0 30px
+    &__up
+        border-bottom: 1px solid rgba(53, 151, 64, 0.3)
+        padding-bottom: 30px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .logo
+            grid-area: logo
+            height: 30px
+            img
+                height: 100%
+        ul
+            display: flex
+            li
+                padding: 0 30px
+                border-right: 1px solid #4FA083
+                &:last-child
+                    border-right: 0
+                a
+                    font-weight: 500
+                    font-size: 14px
+                    line-height: 25px
+                    color: #70737C
+                    transition: 0.3s
+                    &:hover
+                        color: #359740
+            &.nav_left
+                grid-area: ul_l
+                li
+                    &:first-child
+                        padding-left: 0
+            &.nav_right
+                grid-area: ul_r
+                li
+                    &:last-child
+                        padding-right: 0
+    &__down
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-top: 30px
+        .social
+            display: flex
+            align-items: center
+            gap: 15px
+        p
+            font-size: 14px
+            line-height: 25px
+            color: #70737C
